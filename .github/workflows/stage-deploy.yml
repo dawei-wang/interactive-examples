@@ -23,7 +23,7 @@ jobs:
             - uses: actions/checkout@v3
               with:
                   repository: mdn/bob
-                  ref: stage
+                  ref: main
                   path: bob
 
             - name: Setup Node.js environment
