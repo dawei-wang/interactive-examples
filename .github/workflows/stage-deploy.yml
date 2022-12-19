@@ -1,6 +1,9 @@
 name: Stage Deployment
 
 on:
+  push:
+    branches:
+      - fix-stage-deploy
     workflow_dispatch:
         inputs:
             notes:
