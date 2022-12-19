@@ -55,6 +55,5 @@ jobs:
                   aws-region: us-east-1
 
             - name: Deploy pages
-              run: |
-                  aws s3 sync bob/docs/ s3://interactive-examples-stage-ce3e7ea385c68f44/
-              working-directory: examples
+              run: aws s3 sync docs/ s3://interactive-examples-stage-ce3e7ea385c68f44/
+              working-directory: bob
