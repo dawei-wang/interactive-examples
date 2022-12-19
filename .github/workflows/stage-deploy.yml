@@ -28,6 +28,7 @@ jobs:
               with:
                   node-version: '16'
                   cache: npm
+                  cache-dependency-path: 'bob/package-lock.json'
 
             - name: Install all yarn packages
               run: npm ci --only=production
