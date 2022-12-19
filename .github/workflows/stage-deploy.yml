@@ -32,7 +32,7 @@ jobs:
                   node-version: '16'
 
             - name: Install all yarn packages
-              run: npm ci --only=production
+              run: npm ci
               working-directory: bob
 
             - name: Build all
